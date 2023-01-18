@@ -1,0 +1,194 @@
+@import '../../../styles/abstracts/mixins.scss';
+@import '../../../styles/abstracts/variables.scss';
+
+.skills {
+	grid-area: skills;
+	position: relative;
+	padding: 5rem;
+
+	@media only screen and (max-width: $bp-small) {
+		padding: 2rem;
+	}
+
+	&:first-child {
+		margin: 0 auto;
+	}
+
+	&__list {
+		display: flex;
+		flex-flow: wrap;
+		justify-content: center;
+		align-content: center;
+		padding: 2rem;
+	}
+
+	&__card {
+		position: relative;
+		perspective: 150rem;
+		-moz-perspective: 150rem;
+		height: 31rem;
+		width: 31rem;
+
+		&--side {
+			position: absolute;
+			inset: 2rem;
+			backface-visibility: hidden;
+			border-radius: 10px;
+			box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+			@include flexCenter();
+			transition: all 0.5s;
+		}
+
+		&--front {
+			padding: 3rem;
+		}
+
+		&--img {
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			height: 100%;
+			width: 100%;
+
+			&--html {
+				background-image: url(../../../public/img/html5.svg.png);
+			}
+
+			&--css {
+				background-image: url(../../../public/img/css.webp);
+			}
+
+			&--sass {
+				background-image: url(../../../public/img/sass.png);
+			}
+
+			&--bootstrap {
+				background-image: url(../../../public/img/bootstrap.svg.png);
+			}
+
+			&--js {
+				background-image: url(../../../public/img/js.webp);
+			}
+
+			&--ts {
+				background-image: url(../../../public/img/typescript.svg.png);
+			}
+
+			&--react {
+				background-image: url(../../../public/img/react.png);
+			}
+
+			&--next {
+				background-image: url(../../../public/img/nextjs.png);
+			}
+
+			&--node {
+				background-image: url(../../../public/img/node.png);
+			}
+
+			&--php {
+				background-image: url(../../../public/img/php.webp);
+			}
+
+			&--sql {
+				background-image: url(../../../public/img/sql.png);
+			}
+
+			&--vitest {
+				background-image: url(../../../public/img/vitest.svg);
+			}
+
+			&--git {
+				background-image: url(../../../public/img/git.png);
+			}
+		}
+
+		&--back {
+			@include flexCenter();
+			transform: rotateY(180deg);
+			padding: 2rem;
+			font-family: 'Montserrat', sans-serif;
+
+			ul {
+				@include flexCenter();
+				align-items: flex-start;
+				flex-direction: column;
+				font-weight: bold;
+				gap: 2rem;
+				font-size: 1.5rem;
+				text-transform: uppercase;
+			}
+
+			li {
+				@include flexCenter();
+
+				svg {
+					width: 1.5rem;
+					height: 1.5rem;
+					margin-right: 1rem;
+					fill: black;
+				}
+			}
+
+			&--html {
+				background: linear-gradient(to top right, #e54c21, #f17e48);
+			}
+
+			&--css {
+				background: linear-gradient(to top right, #2062af, #3c9cd7);
+			}
+
+			&--sass {
+				background: linear-gradient(to top right, #cc6698, #d38bae);
+			}
+
+			&--bootstrap {
+				background: linear-gradient(to top right, #880afb, #b76dfc);
+			}
+
+			&--js {
+				background: linear-gradient(to top right, #e9c932, #ffe96e);
+			}
+
+			&--ts {
+				background: linear-gradient(to top right, #2d79c7, #59a1e9);
+			}
+
+			&--react {
+				background: linear-gradient(to top right, #61dafb, #b4ecfc);
+			}
+
+			&--node {
+				background: linear-gradient(to top right, #3c873a, #74ad63);
+			}
+
+			&--ajax {
+				background: linear-gradient(to top right, #2ca3dd, #73b8db);
+			}
+
+			&--php {
+				background: linear-gradient(to top right, #777bb3, #9295be);
+			}
+
+			&--sql {
+				background: linear-gradient(to top right, #0978c7, #98c537);
+			}
+
+			&--vitest {
+				background: linear-gradient(to top right, #729b1b, #b8cd8d);
+			}
+
+			&--git {
+				background: linear-gradient(to top right, #f05033, #ff856f);
+			}
+		}
+
+		&:hover &--front {
+			transform: rotateY(-180deg);
+		}
+
+		&:hover &--back {
+			transform: rotateY(0);
+		}
+	}
+}

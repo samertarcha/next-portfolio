@@ -1,0 +1,46 @@
+@import '../../../styles/abstracts/mixins.scss';
+@import '../../../styles/abstracts/variables.scss';
+
+.footer {
+	grid-area: footer;
+	background-color: var(--color-primary);
+	padding: 1rem;
+	@include flexCenter();
+
+	@media (max-width: $bp-small) {
+		padding: 1.5rem;
+	}
+
+	&__content {
+		@include flexCenter();
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	&__social {
+		all: unset;
+		@include flexCenter();
+		gap: 2rem;
+
+		li {
+			all: unset;
+			svg {
+				width: 3rem;
+				height: 3rem;
+				fill: var(--color-secondary);
+
+				@media (max-width: $bp-small) {
+					width: 2.5rem;
+					height: 2.5rem;
+				}
+			}
+		}
+	}
+
+	&__copyright {
+		@include flexCenter();
+		flex-direction: column;
+		font-size: 1.2rem;
+		color: var(--color-white);
+	}
+}

@@ -1,0 +1,95 @@
+@import '../../../../styles/abstracts/mixins.scss';
+@import '../../../../styles/abstracts/variables.scss';
+
+.loading {
+	position: fixed;
+	inset: 0 0 0 0;
+	z-index: 1000;
+	background: rgba(0, 0, 0, 0.7);
+	@include flexCenter();
+
+	&__message {
+		display: flex;
+		align-items: flex-end;
+		gap: 6rem;
+
+		@media only screen and (max-width: $bp-medium) {
+			gap: 4.5rem;
+		}
+
+		@media only screen and (max-width: $bp-tiny) {
+			gap: 3.5rem;
+		}
+
+		&-text {
+			color: #fff;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 4rem;
+
+			@media only screen and (max-width: $bp-medium) {
+				font-size: 3rem;
+			}
+
+			@media only screen and (max-width: $bp-tiny) {
+				font-size: 2rem;
+			}
+		}
+
+		&-dots {
+			display: flex;
+			align-content: flex-end;
+			margin-bottom: 0.75rem;
+			position: relative;
+			overflow: visible;
+			animation: dotFlashing 350ms infinite alternate;
+			animation-delay: 350ms;
+
+			@media only screen and (max-width: $bp-medium) {
+				margin-bottom: 0.5rem;
+			}
+
+			@media only screen and (max-width: $bp-tiny) {
+				margin-bottom: 0.25rem;
+			}
+
+			&,
+			&::before,
+			&::after {
+				display: inline;
+				height: 1.3rem;
+				width: 1.3rem;
+				border-radius: 50%;
+				background-color: #fff;
+
+				@media only screen and (max-width: $bp-medium) {
+					height: 1rem;
+					width: 1rem;
+				}
+
+				@media only screen and (max-width: $bp-tiny) {
+					height: 0.8rem;
+					width: 0.8rem;
+				}
+			}
+
+			&::before,
+			&::after {
+				content: '';
+				position: absolute;
+			}
+
+			&::before {
+				left: -150%;
+				animation: dotFlashing 350ms infinite linear alternate;
+				animation-delay: 175ms;
+			}
+
+			&::after {
+				left: -300%;
+				animation: dotFlashing 350ms infinite linear alternate;
+				animation-delay: 0s;
+			}
+		}
+	}
+}

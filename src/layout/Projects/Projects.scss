@@ -1,0 +1,152 @@
+@import '../../../styles/abstracts/mixins.scss';
+@import '../../../styles/abstracts/variables.scss';
+
+.projects {
+	grid-area: projects;
+	padding: 5rem 0;
+	background-color: var(--color-primary);
+
+	@media only screen and (max-width: $bp-medium) {
+		padding: 5rem 6rem;
+	}
+
+	@media only screen and (max-width: $bp-small) {
+		padding: 5rem 4rem;
+	}
+
+	@media only screen and (max-width: $bp-tiny) {
+		padding: 3rem 2rem;
+	}
+
+	h2 {
+		background-image: linear-gradient(
+			78deg,
+			var(--color-secondary) 0%,
+			var(--color-secondary) 100%
+		);
+		padding: 1rem 2rem;
+		border-radius: 3px;
+	}
+
+	&__list {
+		display: flex;
+		flex-flow: wrap;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		gap: 3rem;
+	}
+
+	&__item {
+		@include flexCenter();
+		flex-direction: column;
+		justify-content: space-between;
+		color: var(--color-primary);
+		background-color: var(--color-white);
+		border-radius: 0.5rem;
+		transform: scale(0.9);
+		box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
+		transition: all 0.3s;
+		max-width: 95%;
+		width: 55rem;
+		height: 75rem;
+
+		// @media only screen and (max-width: $bp-small) {
+		// 	height: 90rem;
+		// }
+	}
+
+	&__item:hover {
+		transform: scale(0.95);
+		// outline: 0.3rem solid var(--color-secondary);
+		// outline-offset: 1rem;
+	}
+
+	&__container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	&__img {
+		height: 27rem;
+		min-width: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top center;
+
+		@media only screen and (max-width: $bp-small) {
+		}
+
+		&--meister {
+			background-image: url(../../../public/img/meister.webp);
+		}
+
+		&--court-reservation {
+			background-image: url(../../../public/img/court-reservation.webp);
+		}
+
+		&--food-order {
+			background-image: url(../../../public/img/food-order.webp);
+		}
+
+		&--expense-tracker {
+			background-image: url(../../../public/img/expense-tracker.webp);
+		}
+
+		&--natours {
+			background-image: url(../../../public/img/natours.webp);
+		}
+
+		&--trillo {
+			background-image: url(../../../public/img/trillo.webp);
+		}
+
+		&--nexter {
+			background-image: url(../../../public/img/nexter.webp);
+		}
+	}
+
+	&__content {
+		@include flexCenter();
+		flex-direction: column;
+		padding: 2rem;
+		gap: 2rem;
+
+		@media only screen and (max-width: $bp-small) {
+			padding: 0;
+		}
+	}
+
+	&__description {
+		font-size: 1.5rem;
+		font-weight: 300;
+		line-height: 1.5;
+		padding-inline: 2rem;
+		color: var(--color-primary);
+
+		li {
+			@include flexCenter();
+			justify-content: flex-start;
+			align-items: flex-start;
+			gap: 1rem;
+
+			&:not(:last-child) {
+				margin-bottom: 1rem;
+			}
+
+			svg {
+				transform: translateY(20%);
+				height: 1.5rem;
+				width: 1.5rem;
+				fill: currentColor;
+			}
+
+			p {
+				flex: 1;
+				text-transform: capitalize;
+			}
+		}
+	}
+}
