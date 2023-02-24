@@ -17,7 +17,7 @@ const Footer = () => {
 					</li>
 					<li>
 						<a
-							href='https://www.linkedin.com/in/samer-tarcha-691991212/'
+							href='https://www.linkedin.com/in/samer-tarcha'
 							target='_blank'
 							rel='noreferrer'>
 							<svg>

@@ -2,7 +2,7 @@ export const ProjectsList = [
 	{
 		name: 'meister',
 		heading: 'Meister',
-		url: 'https://joinmeister.com',
+		url: 'https://meister.samertarcha.com',
 		description: [
 			'Worked along UI/UX designers, to build high performant modern design.',
 			'Developed complex custom reusable components using react.js for scalability and reusability',

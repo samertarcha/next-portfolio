@@ -17,7 +17,7 @@ export const SkillsList = [
 		description: ['7 in 1 architecture', 'mixins', 'nesting', 'variables'],
 	},
 	{
-		name: 'bootstrap',
+		name: 'tailwindcss',
 		description: ['Component Styling', 'Utilities', 'Custom Properties'],
 	},
 	{
@@ -35,11 +35,11 @@ export const SkillsList = [
 	},
 	{
 		name: 'next',
-		description: ['Server-Side Rendering'],
+		description: ['Server-Side Rendering', 'File-Base Routing', 'Next Router'],
 	},
 	{
 		name: 'node',
-		description: ['npm', 'express'],
+		description: ['npm', 'express', 'REST API', 'Sequelize'],
 	},
 	{
 		name: 'ts',
@@ -52,10 +52,9 @@ export const SkillsList = [
 	{
 		name: 'php',
 		description: [
-			'Security',
-			'Fast connection with database',
+			'MVC',
+			'Eloquent Model',
 			'Session management',
-			'administrative privileges',
 		],
 	},
 	{
