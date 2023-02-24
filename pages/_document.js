@@ -11,7 +11,7 @@ class MyDocument extends Document {
 					</title>
 					<meta
 						name='description'
-						content='Front End developer with industry experience building web applications. Specializing in ReactJS, NextJS, TypeScript, SCSS, TailwindCSS, and GIT.'
+						content='As a Front End developer, I specialize in building web applications with ReactJS, NextJS, TypeScript, SCSS, TailwindCSS, and GIT. With industry experience, I create high-quality and responsive web solutions.'
 					/>
 				</Head>
 				<body>
