@@ -29,7 +29,7 @@ export const SkillsList = [
 		description: [
 			'React Router',
 			'Redux',
-			'Custom Reusable Components',
+			'Reusable Components',
 			'Hooks/Custom Hooks',
 		],
 	},

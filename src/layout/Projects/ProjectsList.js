@@ -5,7 +5,7 @@ export const ProjectsList = [
 		url: 'https://meister.samertarcha.com',
 		description: [
 			'Worked along UI/UX designers, to build high performant modern design.',
-			'Developed complex custom reusable components using react.js for scalability and reusability',
+			'Developed complex reusable components using react.js for scalability and reusability',
 			'Utilized React Router, and other light third party packages for custom functionalities and animations',
 			"Built the company's landing page",
 		],
@@ -27,7 +27,7 @@ export const ProjectsList = [
 		heading: 'React Meals',
 		url: 'https://foodorder.samertarcha.com',
 		description: [
-			'Custom Cart Modal Popup',
+			'Cart Modal Popup',
 			'Displayed list of available options',
 			'Ability to add remove items from cart',
 		],
@@ -59,7 +59,7 @@ export const ProjectsList = [
 		heading: 'Trillo',
 		url: 'https://trillo.samertarcha.com',
 		description: [
-			'Custom Flexbox layout',
+			'Flexbox layout',
 			'Reactive search bar',
 			'Use of SVG sprite to display icons',
 			'Advanced animations',
@@ -70,9 +70,9 @@ export const ProjectsList = [
 		heading: 'Nexter',
 		url: 'https://nexter.samertarcha.com',
 		description: [
-			'Custom Grid layout',
+			'Grid layout',
 			'Auto fit grid template for  responsive design',
-			'Custom Image gallery',
+			'Image gallery',
 		],
 	},
 ];

@@ -14,9 +14,9 @@ const Header = () => {
 	return (
 		<header className='header' id='home'>
 			<div className='header__content'>
-				<h1 className='header__occupation' data-aos='fade-left'>
+				<div className='header__occupation' data-aos='fade-left'>
 					Web Developer
-				</h1>
+				</div>
 				<h1 className='header__name' data-aos='fade-right'>
 					Samer Tarcha
 				</h1>
