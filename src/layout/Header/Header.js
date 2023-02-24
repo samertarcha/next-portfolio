@@ -14,12 +14,12 @@ const Header = () => {
 	return (
 		<header className='header' id='home'>
 			<div className='header__content'>
-				<div className='header__occupation' data-aos='fade-left'>
+				<h1 className='header__occupation' data-aos='fade-left'>
 					Web Developer
-				</div>
-				<div className='header__name' data-aos='fade-right'>
+				</h1>
+				<h1 className='header__name' data-aos='fade-right'>
 					Samer Tarcha
-				</div>
+				</h1>
 				<div className='header__location' data-aos='fade-left'>
 					Beirut, Lebanon
 				</div>
