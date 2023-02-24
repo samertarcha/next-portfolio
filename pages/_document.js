@@ -8,7 +8,7 @@ class MyDocument extends Document {
 					<link rel='icon' href='/img/icon.png' />
 					<title>
 						Samer Tarcha | React Developer | Front-End Developer |
-						Web Developer | Software Engineer
+						Software Engineer
 					</title>
 					<meta
 						name='description'
